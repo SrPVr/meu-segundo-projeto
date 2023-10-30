@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Enciclopédia</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #sidebar {
+            background-color: black;
+            color: wheat;
+            padding: 12px;
+            margin: 0%;
+        }
+
+        .container-sidebar {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+           transition: ease-out 0.4s;
+        }
+
+        .container-sidebar:hover {
+            background-color: rgb(72, 71, 71)
+        }
+
+    a {
+        text-decoration: none;
+    }
+
+
+        #search-button {
+            background-color: rgb(91, 89, 89);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 5px;
+            transition: ease 0.4s;
+        }
+
+
+        #search-button:hover {
+            background-color: rgb(37, 37, 37);
+        }
+
+        .text-pages {
+            color: rgb(57, 180, 237);
+        }
+
+         #content {
+            margin: 10px;
+         }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <a href="index.html" class="container-sidebar">Home</a>
+        <a href="" class="container-sidebar">Random Page</a>
+        <input type="text" id="search" placeholder="Search...">
+        <button id="search-button">Search</button>
+        <a href="#" class="container-sidebar">New Page</a>
+    </div>
+    <div id="content">
+        <h1>All Pages</h1>
+        <ul id="entryList">
+            <!-- As entradas da enciclopédia serão inseridas aqui dinamicamente -->
+            <li class="lists"><a href="pythonpage.html" class="text-pages">Python</a></li>
+        </ul>
+        <!-- Conteúdo da página vai aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
